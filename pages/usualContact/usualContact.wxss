@@ -1,0 +1,39 @@
+/* pages/usualContact/usualContact.wxss */
+page{
+  background: #efefef;
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+.tit{
+  padding: 20rpx;
+  background: #fff;
+}
+.tit navigator image{
+  height: 46rpx;
+  width: 46rpx;
+}
+.list{
+  padding-left: 30rpx;
+  border-top: 1rpx solid #ababab;
+  border-bottom: 1rpx solid #ababab;
+  background: #fff;
+}
+.list .checkbox{
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #dddddd;
+}
+.list .checkbox:last-child{
+  border-bottom: none;
+}
+.list .info{
+  width: 620rpx;
+}
+.list text{
+  color: #767676;
+}
+button{
+  background: #f13838;
+  width: 620rpx;
+  color: #fff;
+  margin: 60rpx auto;
+}

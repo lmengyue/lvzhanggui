@@ -1,0 +1,18 @@
+<!--pages/bindPhone/bindPhone.wxml-->
+<view class='meng' style="display:{{bindBottom!=0?'none':'block'}};z-index:10000;" bindtap='closeBindPhone'></view>
+<view class='bind-phone' style="bottom: {{bindBottom}}rpx">
+  <view class='bind-tit'>短信验证码登录</view>
+  <view class='bind-info'>如手机号未注册，验证后将自动注册</view>
+  <view class="bind-form">
+    <view class="flex">
+      <text>手机号</text>
+      <input type="number" bindinput="phoneCheck" style="width: 450rpx;" placeholder='请输入手机号' />
+    </view>
+    <view class="flex">
+      <text>验证码</text>
+      <input type="number" bindinput="checkNum" class='check' placeholder='短信验证码' />
+      <view class="send-check" style="background: {{bg}}" bindtap="sendCheck">{{bindstatus}}</view>
+    </view>
+  </view>
+  <button class="bind-sub" bindtap="bindPhone">登录</button>
+</view>

@@ -1,0 +1,155 @@
+/**app.wxss**/
+@import "/wxParse/wxParse.wxss";
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+} 
+.fr{
+  float: right;
+}
+.fl{
+  float: left;
+}
+.title{
+  border-left: 8rpx solid #2aba6e;
+  font-size: 28rpx;
+  text-indent: 20rpx;
+  color: #303133;
+  margin-top: 40rpx;
+}
+.spacing{
+  height: 20rpx;
+  border-top: 1rpx solid #d9d9d9;
+  border-bottom: 1rpx solid #d9d9d9;
+  background: #efeff4;
+}
+.bottom-spacing{
+  height: 96rpx;
+}
+.big-spacing{
+  height: 56rpx;
+  border-top: 1rpx solid #d9d9d9;
+  border-bottom: 1rpx solid #d9d9d9;
+  background: #efeff4;
+}
+.nav{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 92rpx;
+  padding-top: 6rpx;
+  border-top: 1rpx solid #e5e5e5;
+  text-align: center; 
+  justify-content: space-around;
+  background: #f6f8f8;
+  z-index: 999;
+}
+.nav navigator{
+  width: 180rpx;
+  text-align: center;
+}
+.nav image{
+  display: block;
+  margin: 0 auto 6rpx auto;
+  width: 53rpx;
+  height: 46rpx;
+}
+.nav text{
+  display: block;
+  font-size: 22rpx;
+  color: #919399;
+}
+.nav image:nth-child(2){
+  display: none;
+  margin: 0 auto 6rpx auto;
+}
+.nav .active text{
+  color: #55c88b;
+}
+.nav .active image:first-child{
+  display: none;
+  margin: 0 auto 6rpx auto;
+}
+.nav .active image:nth-child(2){
+  display: block;
+  margin: 0 auto 6rpx auto;
+}
+.meng{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 750rpx;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+  z-index: 99;
+  display: none;
+}
+.rich-text image{
+  width: 100% !important;
+}
+.bg{
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: center;
+}
+/* 绑定手机号 */
+.bind-phone{
+  position: fixed;
+  transition: .5s;
+  z-index: 1000000;
+  background: #fff;
+  width: 750rpx;
+}
+.bind-tit{
+  margin: 80rpx 0 50rpx 0;
+  text-align: center;
+  font-size: 60rpx;
+}
+.bind-info{
+  margin-bottom: 40rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+.bind-form{
+  margin: 0 60rpx;
+}
+.bind-form view{
+  padding-top: 50rpx;
+  height: 90rpx;
+  line-height: 84rpx;
+  border-bottom: 1rpx solid #eee;
+  font-size: 30rpx;
+}
+.bind-form view input{
+  width: 400rpx;
+  height: 80rpx;
+  display: inline-block;
+}
+.bind-form text{
+  display: inline-block;
+  width: 180rpx;
+}
+.bind-form .send-check{
+  display: inline-block;
+  padding: 0;
+  width: 136rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  font-size: 26rpx;
+  color: #fff;
+  text-align: center;
+  border-radius: 10rpx;
+}
+.bind-form .check{
+  width: 300rpx;
+}
+.bind-sub{
+  margin: 100rpx auto;
+  width: 630rpx;
+  color: #fff;
+  background: #3dbf7b;
+  font-size: 36rpx;
+  height: 88rpx;
+}
